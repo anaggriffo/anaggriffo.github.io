@@ -163,3 +163,11 @@ a.custom-card:hover {
     background-color: #F36679;
 
    }
+   .g-signin2{
+    padding: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 6px;
+    width: 350px;
+   }
+  
