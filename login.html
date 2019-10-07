@@ -45,7 +45,9 @@
           <input type="password" placeholder="contraseña" id="password" required />
           <p><button type="button" onclick="hacerLogin()">ENTRAR</button></p>
         </form>
-        <div class="g-signin2" data-onsuccess="onSignIn"><a href="#" onclick="signOut();">Sign out</a></div>
+        <div class="g-signin2" data-onsuccess="onSignIn" onclick="onSignIn()">
+        </div>
+        <a href="#" onclick="signOut();">Sign out</a>
       </div>
     </div>
   </main>
