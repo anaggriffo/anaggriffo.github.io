@@ -38,15 +38,13 @@
           <input type="password" placeholder="contraseña" required />
           <input type="text" placeholder="email" />
           <button>Crear</button>
-          <p class="message">¿No tienes una cuenta? <a href="#">Registrarme</a></p>
         </form>
         <form class="login-form">
           <input type="text" placeholder="nombre de usuario" id="username" required autofocus />
           <input type="password" placeholder="contraseña" id="password" required />
           <p><button type="button" onclick="hacerLogin()">ENTRAR</button></p>
         </form>
-        <div class="g-signin2" data-onsuccess="onSignIn">
-        </div>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
         <a href="#" onclick="signOut();">Sign out</a>
       </div>
     </div>
