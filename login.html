@@ -15,6 +15,10 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
   <link href="css/login.css" rel="stylesheet">
+  <!-- Scripts Google -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+  <meta name="google-signin-client_id"
+    content="617539443008-p51s42rie6tr76nkh6frunrsok4ccuu0.apps.googleusercontent.com">
 </head>
 
 <body>
@@ -39,8 +43,11 @@
         <form class="login-form">
           <input type="text" placeholder="nombre de usuario" id="username" required autofocus />
           <input type="password" placeholder="contraseña" id="password" required />
-          <p><button type="button" onclick="hacerLogin()">ENTRAR</button></p>          <p class="message">¿No tienes una cuenta? <a href="#">Crear una cuenta</a></p>
+          <p><button type="button" onclick="hacerLogin()">ENTRAR</button></p>
+          <p class="message">¿No tienes una cuenta? <a href="#">Crear una cuenta</a></p>
         </form>
+        <div class="g-signin2" data-onsuccess="onSignIn"></div>
+        <a href="#" onclick="signOut();">Sign out</a>
       </div>
     </div>
   </main>
