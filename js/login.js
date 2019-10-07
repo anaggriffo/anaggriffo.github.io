@@ -30,4 +30,5 @@ function signOut() {
     auth2.signOut().then(function () {
       console.log('User signed out.');
     });
+    window.location = "login.html"
   }
