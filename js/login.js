@@ -22,7 +22,9 @@ function onSignIn(googleUser) {
     console.log('Image URL: ' + profile.getImageUrl());
     console.log('Email: ' + profile.getEmail()); // This is null if the 'email' scope is not present.
     var id_token = googleUser.getAuthResponse().id_token;
-    console.log(id_token);  
+    console.log(id_token);
+    window.location = "index.html"
+  
 }
  function signOut() {
     var auth2 = gapi.auth2.getAuthInstance();
