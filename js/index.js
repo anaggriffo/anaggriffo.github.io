@@ -14,11 +14,11 @@ function verCarrito() {
 function signOut() {
     var signout = window.location.replace("login.html");
     document.getElementById("signout").innerHTML = signout;
-    
+
     var auth2 = gapi.auth2.getAuthInstance();
     auth2.signOut().then(function () {
         console.log('User signed out.');
-        window.location.replace("login.html");
-        document.getElementById("signout").innerHTML = auth2;
     });
+    window.location.replace("login.html");
+    document.getElementById("signout").innerHTML = auth2;
 }
